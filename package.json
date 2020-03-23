@@ -7,9 +7,9 @@
     "test": "jest",
     "clean": "rimraf dist/*",
     "lint": "tsc --noEmit && eslint \"**/*.{js,ts,jsx,tsx}\" --color --fix",
-    "start-dev": "webpack-dev-server --config webpack.dev.js npm run lint --open --hot",
+    "start-dev": "webpack-dev-server --config webpack.dev.js --open --hot",
     "start": "npm run start-dev",
-    "build": "npm run lint npm run clean && webpack --config webpack.prod.js",
+    "build": "npm run clean && webpack --config webpack.prod.js",
     "start-prod": "npm run lint npm run build",
     "cypress": "cypress open"
   },

@@ -1,13 +1,13 @@
 import React from "react";
 import { useEffect, useState } from "react";
-import styled from "styled-components"
+import styled from "styled-components";
 
 const Bound = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-`
+`;
 
 export interface CounterProps {
     defaultValue: number;

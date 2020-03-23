@@ -3,10 +3,10 @@ import { render } from "react-dom";
 import "@styles/index.scss";
 import App from "./App";
 
-import { Provider } from 'react-redux';
-import configureStore from './configureStoreRedux';
+import { Provider } from "react-redux";
+import configureStore from "./configureStoreRedux";
 
-const store = configureStore()
+const store = configureStore();
 
 render(
     <Provider store={store}>

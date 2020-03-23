@@ -10,11 +10,11 @@ declare global {
 
 export default function configureStore() {
     const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
-    const middleware = [thunk];
+    const middleware = [thunk]
 
     const store = createStore(
         rootReducer,
         composeEnhancers(applyMiddleware(...middleware)),
     );
-    return store;
+    return store
 };

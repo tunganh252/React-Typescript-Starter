@@ -20,8 +20,7 @@ interface CounterState {
     lastChangeType: "up" | "down" | "none";
 }
 
-
-export default (props: CounterProps) => {
+const Counter: React.FC<CounterProps> = (props: CounterProps) => {
     const [count, setCount] = useState<CounterState>({
         value: props.defaultValue,
         lastChangeType: "none",
@@ -52,3 +51,5 @@ export default (props: CounterProps) => {
         </Bound>
     );
 };
+
+export default React.memo(Counter);

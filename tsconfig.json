@@ -1,0 +1,29 @@
+{
+
+  "compilerOptions": {
+    "module": "amd",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "jsx": "react",
+    "target": "es5",
+    "noImplicitAny": true,
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "outDir": "dist",
+    "baseUrl": ".",
+    "paths": { // ide support suggestion
+      "@components/*": ["src/components/*"],
+      "@containers/*": ["src/containers/*"],
+      "@images/*": ["public/assets/images/*"],
+      "@fonts/*": ["public/assets/fonts/*"],
+      "@styles/*": ["src/styles/*"]
+    }
+  },
+  "typeRoots": ["*.d.ts", "types/*.d.ts"],
+  "exclude": [
+    "dist",
+    "node_modules",
+    "**/*.spec.ts",
+    "**/*.spec.tsx"
+  ]
+}

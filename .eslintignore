@@ -1,0 +1,10 @@
+
+dist/*
+**/*.d.ts
+/src/public/
+/src/types/
+**/*.spec.tsx
+**/*.spec.ts
+**/__tests__/*
+webpack.*
+cypress/

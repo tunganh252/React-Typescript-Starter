@@ -1,5 +1,13 @@
 import React from "react";
-import {useEffect, useState} from "react";
+import { useEffect, useState } from "react";
+import styled from "styled-components"
+
+const Bound = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+`
 
 export interface CounterProps {
     defaultValue: number;
@@ -11,6 +19,7 @@ interface CounterState {
     prevValue: number | undefined;
     lastChangeType: "up" | "down" | "none";
 }
+
 
 export default (props: CounterProps) => {
     const [count, setCount] = useState<CounterState>({
@@ -33,13 +42,13 @@ export default (props: CounterProps) => {
                 props.afterChange(count.value, count.prevValue, count.lastChangeType);
             }
         };
-    },[count]);
+    }, [count]);
 
     return (
-        <>
+        <Bound>
             <button onClick={upCount}>Up</button>
             <label>{count.value}</label>
             <button onClick={downCount}>Down</button>
-        </>
+        </Bound>
     );
 };

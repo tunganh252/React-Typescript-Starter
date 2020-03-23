@@ -8,8 +8,8 @@ const App: React.FC = () => {
             <Counter defaultValue={0} />
             <img src={jsIcon} alt={"icon"} width={50} />
         </div>
-    )
-}
+    );
+};
 
-export default App
+export default App;
 

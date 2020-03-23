@@ -15,6 +15,15 @@ declare module '*.jpg' {
     const value: any;
     export = value;
 }
+
+// declare module library to use in this project
+declare module 'styled-components';
+declare module 'react-router-dom';
+declare module 'axios';
+declare module 'moment';
+declare module 'redux-thunk';
+declare module 'react-redux';
+
 declare module '*.jpeg';
 declare module '*.gif';
 declare module '*.svg';
